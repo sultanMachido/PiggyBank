@@ -1,34 +1,35 @@
 {
-    "posts": [
+    "profiles": [
       {
         "id": 1,
-        "title": "json-server",
-        "author": "typicode"
-      },
-      {
-        "name": "kjehfehklf",
-        "email": "kjhbkjjbk",
-        "id": 2
-      },
-      {
-        "name": "Harry Porter",
-        "email": "Kim Kardashian",
-        "id": 3
-      },
-      {
-        "title": "sdkjbakj",
-        "author": "skdjkjslkd",
-        "id": 4
+        "firstname": "json-server",
+        "lastname": "typicode",
+        "telephone": "08139751464",
+        "email":"opehardesina@gmail.com"
       }
     ],
-    "comments": [
+    "wallet": [
       {
         "id": 1,
-        "body": "some comment",
-        "postId": 1
+        "amount": "some comment",
+        "postId": 1,
+        "dateTime":""
       }
     ],
-    "profile": {
-      "name": "typicode"
-    }
+    "account":[
+        {
+            "accountName": "typicode",
+            "accountNumber":"2053667607",
+            "bvn": ""
+      
+          }
+    ] ,
+    "transaction":[
+        {
+            "id": 1,
+            "dateTime":"",
+            "amount":2000,
+            "type":"deposit"
+        }
+    ]
   }
