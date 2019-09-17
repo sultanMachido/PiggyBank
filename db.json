@@ -106,6 +106,14 @@
       "email": "opehardesina@gmail.com",
       "password": "jhdjhjddhsdjajdbaj",
       "id": 14
+    },
+    {
+      "firstname": "Nathan",
+      "lastname": "Uvwiosa",
+      "phone": "39789374637",
+      "email": "testuser@email.com",
+      "password": "djshdfhskfjskjskhskjhkhjh",
+      "id": 15
     }
   ],
   "wallet": [
@@ -120,7 +128,8 @@
     {
       "accountName": "typicode",
       "accountNumber": "2053667607",
-      "bvn": ""
+      "bvn": "",
+      "profilesId": 1
     }
   ],
   "transaction": [
