@@ -40,6 +40,8 @@ $(document).ready(function(){
     
                     // here we will handle errors and validation messages
                 });
+        }else{
+            console.log('error');
         }
         
 
