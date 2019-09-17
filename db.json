@@ -1,36 +1,42 @@
 {
-    "profiles": [
-      {
-        "id": 1,
-        "firstname": "json-server",
-        "lastname": "typicode",
-        "telephone": "08139751464",
-        "email":"opehardesina@gmail.com",
-        "password":"kljskhjdhkjd"
-      }
-    ],
-    "wallet": [
-      {
-        "id": 1,
-        "amount": "some comment",
-        "postId": 1,
-        "dateTime":""
-      }
-    ],
-    "account":[
-        {
-            "accountName": "typicode",
-            "accountNumber":"2053667607",
-            "bvn": ""
-      
-          }
-    ] ,
-    "transaction":[
-        {
-            "id": 1,
-            "dateTime":"",
-            "amount":2000,
-            "type":"deposit"
-        }
-    ]
-  }
+  "profiles": [
+    {
+      "id": 1,
+      "firstname": "json-server",
+      "lastname": "typicode",
+      "telephone": "08139751464",
+      "email": "opehardesina@gmail.com",
+      "password": "kljskhjdhkjd"
+    },
+    {
+      "firstname": "jhjgfdsu;aslkd",
+      "lastname": "dkjhjcgdgudhi",
+      "phone": "89809-909203920",
+      "email": "opehardesina@gmail.com",
+      "id": 2
+    }
+  ],
+  "wallet": [
+    {
+      "id": 1,
+      "amount": "some comment",
+      "postId": 1,
+      "dateTime": ""
+    }
+  ],
+  "account": [
+    {
+      "accountName": "typicode",
+      "accountNumber": "2053667607",
+      "bvn": ""
+    }
+  ],
+  "transaction": [
+    {
+      "id": 1,
+      "dateTime": "",
+      "amount": 2000,
+      "type": "deposit"
+    }
+  ]
+}
