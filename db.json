@@ -111,8 +111,8 @@
   "wallet": [
     {
       "id": 1,
-      "amount": "some comment",
-      "postId": 1,
+      "amount": 4000,
+      "profilesId": 1,
       "dateTime": ""
     }
   ],
