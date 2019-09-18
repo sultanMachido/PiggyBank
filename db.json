@@ -199,7 +199,7 @@
   "wallet": [
     {
       "id": 1,
-      "amount": "12000",
+      "amount": "-2000",
       "profilesId": 1,
       "dateTime": "",
       "{amount:1000}": "",
@@ -651,6 +651,30 @@
       "transactionType": "deposit",
       "profilesId": "1",
       "id": 50
+    },
+    {
+      "amount": "10000",
+      "account": "2053667607",
+      "BVN": "11111111111",
+      "transactionType": "withdrawal",
+      "profilesId": "1",
+      "id": 51
+    },
+    {
+      "amount": "10000",
+      "account": "2053667607",
+      "BVN": "11111111111",
+      "transactionType": "withdrawal",
+      "profilesId": "1",
+      "id": 52
+    },
+    {
+      "amount": "10000",
+      "account": "2053667607",
+      "BVN": "11111111111",
+      "transactionType": "withdrawal",
+      "profilesId": "1",
+      "id": 53
     }
   ]
 }
