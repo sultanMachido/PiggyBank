@@ -328,7 +328,7 @@ $(document).ready(function(){
                                          let newAmount = amountOne + amountTwo;
                                         // updating new amount using PATCH method
                                         let info ={
-                                            "amount":newAmount
+                                            'amount':newAmount
                                         }
                                         
 
@@ -338,7 +338,7 @@ $(document).ready(function(){
                                          $.ajax({
                                                 type        : 'PATCH', // define the type of HTTP verb we want to use (POST for our form)
                                                 url         : 'http://localhost:3000/wallet/'+responseObj.id, // the url where we want to POST
-                                                data        :  JSON.stringify(info), // our data object
+                                                data        :  info, // our data object
                                                 dataType    : 'json', // what type of data do we expect back from the server
                                                 encode          : true
                                             }).done(function(data) {
@@ -501,12 +501,13 @@ $(document).ready(function(){
                                      let amountOne = parseInt(res[0].amount) 
                                      let amountTwo = parseInt(accountData.amount);
 
-                                     let newAmount = amountOne - amountTwo;
+                                     let newAmount = amountTwo - amountOne;
                                     // updating new amount using PATCH method
                                     let info ={
-                                        "amount":newAmount
+                                        'amount':newAmount
                                     }
                                     
+                                    console.log(newAmount);
 
                                      console.log(responseObj)
 
@@ -514,7 +515,7 @@ $(document).ready(function(){
                                      $.ajax({
                                             type        : 'PATCH', // define the type of HTTP verb we want to use (POST for our form)
                                             url         : 'http://localhost:3000/wallet/'+responseObj.id, // the url where we want to POST
-                                            data        :  JSON.stringify(info), // our data object
+                                            data        :  info, // our data object
                                             dataType    : 'json', // what type of data do we expect back from the server
                                             encode          : true
                                         }).done(function(data) {
