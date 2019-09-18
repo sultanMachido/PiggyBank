@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+     //creating register logic
         $('#register-form').submit(function(event) {
 
         // get the form data
@@ -345,11 +345,7 @@ $(document).ready(function(){
                                                                        
                                                 // log data to the console so we .can see
                                                 console.log(data);
-                                                
-                                               
-                                        
-                                                // here we will handle dummy account creation and saving to account table
-                                                // generateAccountDetails(data.firstname,data.lastname,data.phone,data.id);
+
                                               
                                             });
                                          
@@ -358,31 +354,7 @@ $(document).ready(function(){
                         })
         
         
-                                // var walletData = {
-                                //     'amount'      : amount,
-                                //     'account'     : accountNumber,
-                                //     'BVN'         : bvn,
-                                //     'transactionType' : typeOfTransaction,
-                                //     'profilesId' :  profile
-                                // };
-                                  
-                                // $.ajax({
-                                //     type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-                                //     url         : 'http://localhost:3000/wallet', // the url where we want to POST
-                                //     data        :  accountData, // our data object
-                                //     dataType    : 'json', // what type of data do we expect back from the server
-                                //     encode          : true
-                                // }).done(function(data) {
-                                                             
-                                //     // log data to the console so we .can see
-                                //     console.log(data);
-                                    
-                                //     walletDeposit = true;
-                            
-                                //     // here we will handle dummy account creation and saving to account table
-                                //     // generateAccountDetails(data.firstname,data.lastname,data.phone,data.id);
-                                  
-                                // });
+                              
                               }
                           
                         });
@@ -406,6 +378,11 @@ $(document).ready(function(){
         event.preventDefault();
 
   })
+
+  //creating withdrawal logic
+
+
+  
     
 
 })
