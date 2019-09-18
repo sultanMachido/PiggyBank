@@ -228,7 +228,7 @@ $(document).ready(function(){
         let id = $('#id').val();
 
         var error;
-        if (amount === '' || account==='' ||  bvn ==='' || pin ==='' || otp ==='') {
+        if (amount === '' || accountNumber ==='' ||  bvn ==='' || pin ==='' || otp ==='') {
             error = true;
         }
 
@@ -396,7 +396,7 @@ $(document).ready(function(){
     let id = $('#w-id').val();
 
     var error;
-    if (amount === '' || account==='' ||  bvn ==='' || pin ==='' || otp ==='') {
+    if (amount === '' || accountNumber ==='' ||  bvn ==='' || pin ==='' || otp ==='') {
         error = true;
     }
 
