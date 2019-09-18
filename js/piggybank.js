@@ -68,6 +68,22 @@ $(document).ready(function(){
                                  
                                 // log data to the console so we can see
                                 console.log(data.id);
+                                let walletData ={
+                                    'amount' : 0,
+                                    'profilesId' : data.id,
+                                    'dateTime' : ''
+                                   }
+
+                                $.ajax({
+                                    type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+                                    url         : 'http://localhost:3000/wallet', // the url where we want to POST
+                                    data        : walletData, // our data object
+                                    dataType    : 'json', // what type of data do we expect back from the server
+                                    encode          : true
+                                }).done(function(data){
+                                    console.log(data);
+                                })
+
                                
                                 // here we will handle dummy account creation and saving to account table
                                 // generateAccountDetails(data.firstname,data.lastname,data.phone,data.id);
@@ -202,10 +218,11 @@ $(document).ready(function(){
   $('#deposit-form').submit(function(event) {
     
         let amount = $('#amount').val();
-        let account  = $('#account').val();
+        let accountNumber  = $('#account').val();
         let bvn     = $('#bvn').val();
         let pin     = $('#pin').val();
         let otp  = $('#otp').val();
+        console.log(amount);
 
         var error;
         if (amount === '' || account==='' ||  bvn ==='' || pin ==='' || otp ==='') {
@@ -223,26 +240,126 @@ $(document).ready(function(){
                  let depositStatus;
                  let accountStatus;
                  let bvnStatus;
-                
+                 let pinStatus;
+                 let typeOfTransaction = 'deposit';
+                 let profile = res[0].profilesId;
+                 let walletDeosit;
+                 console.log(res[0].profilesId);
                 res.forEach(element => {
                    if (element.accountBalance > amount) {
+                        console.log(element.accountBalance)
                       depositStatus = true;
+                      console.log(depositStatus);
                    }else{
                       depositStatus = false; 
                    } 
 
 
-                   if (element.accountNumber === account) {
+                   if (element.accountNumber === accountNumber) {
                      accountStatus = true;
+                     console.log(accountStatus);
                    }else{
                      accountStatus = false; 
                    } 
 
                    if (element.bvn === bvn) {
                       bvnStatus = true; 
+                      console.log(bvnStatus);
                    }else{
                        bvnStatus = false;
                    }
+
+                   if (element.pin === pin) {
+                       pinStatus = true; 
+                       console.log(pinStatus);
+                   }else{
+                        pinStatus = false;
+                    }
+
+
+                    if (depositStatus && accountStatus && bvnStatus && pinStatus) {
+                         
+                        var accountData = {
+                            'amount'      : amount,
+                            'account'     : accountNumber,
+                            'BVN'         : bvn,
+                            'transactionType' : typeOfTransaction,
+                            'profilesId' :  profile
+                        };
+                        console.log(profile);
+                    
+                        $.ajax({
+                            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+                            url         : 'http://localhost:3000/transaction', // the url where we want to POST
+                            data        :  accountData, // our data object
+                            dataType    : 'json', // what type of data do we expect back from the server
+                            encode          : true
+                        }).done(function(data) {
+                                                     
+                            // log data to the console so we can see
+                            console.log(data);
+                            
+                            walletDeposit = true;
+                    
+                            // here we will handle dummy account creation and saving to account table
+                            // generateAccountDetails(data.firstname,data.lastname,data.phone,data.id);
+                          
+                        });
+
+                      }
+
+
+                      if (walletDeposit) {
+
+                        $.ajax({
+                            type        : 'GET', // define the type of HTTP verb we want to use (POST for our form)
+                            url         : 'http://localhost:3000/wallet', // the url where we want to POST
+                            // data        : formData, // our data object
+                            dataType    : 'json', // what type of data do we expect back from the server
+                            // async: false,
+                            success: function(res){
+                                // console.log(res);
+                                 
+                                
+                                console.log(res.length);
+                               
+                                res.forEach(element => {
+                                   if (element.email === email && element.password === password) {
+                                   console.log('logged in');
+                                   } 
+            
+                             });
+                            }
+                                       
+                        })
+
+
+                        var walletData = {
+                            'amount'      : amount,
+                            'account'     : accountNumber,
+                            'BVN'         : bvn,
+                            'transactionType' : typeOfTransaction,
+                            'profilesId' :  profile
+                        };
+                          
+                        $.ajax({
+                            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+                            url         : 'http://localhost:3000/wallet', // the url where we want to POST
+                            data        :  accountData, // our data object
+                            dataType    : 'json', // what type of data do we expect back from the server
+                            encode          : true
+                        }).done(function(data) {
+                                                     
+                            // log data to the console so we can see
+                            console.log(data);
+                            
+                            walletDeposit = true;
+                    
+                            // here we will handle dummy account creation and saving to account table
+                            // generateAccountDetails(data.firstname,data.lastname,data.phone,data.id);
+                          
+                        });
+                      }
 
                    
 
@@ -254,33 +371,8 @@ $(document).ready(function(){
       
         })
 
-    var accountData = {
-        'amount'      : amount,
-        'account'     : accountNumber,
-        'pin'         : pin,
-        'BVN'         : bvn,
-        "otp"         : otp
-       
-    };
-
-    $.ajax({
-        type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-        url         : 'http://localhost:3000/account', // the url where we want to POST
-        data        :  accountData, // our data object
-        dataType    : 'json', // what type of data do we expect back from the server
-        encode          : true
-    })  .done(function(data) {
-                                 
-        // log data to the console so we can see
-        console.log(data);
-        
-        
-
-        // here we will handle dummy account creation and saving to account table
-        // generateAccountDetails(data.firstname,data.lastname,data.phone,data.id);
-      
-    });
-
+    
+        event.preventDefault();
 
   })
     
