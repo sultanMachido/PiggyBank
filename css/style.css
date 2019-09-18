@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: #667db6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#nav{
+    width: 100%;
+    margin: 0px auto;
+    background-color: rgb(12, 12, 12);
+    padding: 10px;
+    border-bottom:3px solid white;
+    color: white;
+}
+
+#nav ul li{
+    list-style: none;
+  
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-around;
+}
+.heading-image{
+    margin: 100px auto;
+    width: 80%;
+    text-align: center;
+}
+.button-class{
+    margin: 100px auto;
+    width: 80%;
+    text-align: center;
+}
+
+#button-one{
+    padding: 5px;
+    border-radius: 30px;
+    background-color: red;
+    width: 100px;
+    border: 1px solid red;
+    color: white;
+    font-weight: bold;
+    box-shadow: antiquewhite;
+}
+
+#button-two{
+    padding: 5px;
+    border-radius: 30px;
+    background-color: blue;
+    width: 100px;
+    border: 1px solid blue;
+    color: white;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(21, 21, 197);
+    font-weight: bold;
+}
+
+a:hover{
+    color: red;
+}
+
+.display{
+    width: 80%;
+    margin: 0 auto;
+    background-color: aliceblue;
+}

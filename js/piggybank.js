@@ -492,6 +492,8 @@ $(document).ready(function(){
                                     
                                      //check if amount you are trying to withdraw is greater than amount available
                                      if (accountData.amount > res[0].amount) {
+                                        
+                                        console.log('insufficient balance')
                                          
                                         return 'insufficient balance';
                                      }
