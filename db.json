@@ -578,6 +578,14 @@
       "transactionType": "deposit",
       "profilesId": "1",
       "id": 41
+    },
+    {
+      "amount": "10000",
+      "account": "2053667607",
+      "BVN": "11111111111",
+      "transactionType": "withdrawal",
+      "profilesId": "1",
+      "id": 42
     }
   ]
 }
