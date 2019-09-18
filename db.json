@@ -202,7 +202,8 @@
       "accountNumber": "2053667607",
       "accountBalance": 50000,
       "phone": "",
-      "bvn": "",
+      "bvn": "11111111111",
+      "pin":"1111",
       "profilesId": 1
     }
   ],
@@ -211,7 +212,10 @@
       "id": 1,
       "dateTime": "",
       "amount": 2000,
-      "type": "deposit"
+      "transactionType":"deposit",
+      "bvn" : "11111111111",
+      "accountNumber":"2053667607",
+      "profilesId": 1
     }
   ]
 }
