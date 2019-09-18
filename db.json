@@ -114,6 +114,78 @@
       "email": "testuser@email.com",
       "password": "djshdfhskfjskjskhskjhkhjh",
       "id": 15
+    },
+    {
+      "firstname": "Esther",
+      "lastname": "Ihewkwo",
+      "phone": "90419239210",
+      "email": "kjdhd@gmail.com",
+      "password": "oiewjdjwdkjadjks",
+      "id": 16
+    },
+    {
+      "firstname": "me",
+      "lastname": "me",
+      "phone": "0930934-34023043",
+      "email": "kjdhd1@gmail.com",
+      "password": "jdsjcnkjbasjcbnsmz",
+      "id": 17
+    },
+    {
+      "firstname": "son",
+      "lastname": "son",
+      "phone": "943072382198",
+      "email": "son@gmail.com",
+      "password": "ndkjcnksdjnjlds",
+      "id": 18
+    },
+    {
+      "firstname": "moon",
+      "lastname": "moon",
+      "phone": "8328737983617687",
+      "email": "moon@gmail.com",
+      "password": "jfhjshfjhsjkjkasjd",
+      "id": 19
+    },
+    {
+      "firstname": "Alex",
+      "lastname": "Lacazette",
+      "phone": "9348093039",
+      "email": "laca@gmail.com",
+      "password": "nbcnabckjdjb",
+      "id": 20
+    },
+    {
+      "firstname": "robbie",
+      "lastname": "ty",
+      "phone": "94819823",
+      "email": "ty@gmail.com",
+      "password": "kjiojoewjkdjek4jkjedj",
+      "id": 21
+    },
+    {
+      "firstname": "dbjasjk",
+      "lastname": "smndmasnm",
+      "phone": "3989290339",
+      "email": "bnbvhsdv@gmail.com",
+      "password": "jbhbcsygcdhsj",
+      "id": 22
+    },
+    {
+      "firstname": "cjbbsdjs",
+      "lastname": "dhdkhsjfhjsjdscnak",
+      "phone": "32748273874",
+      "email": "dsbhcbsdcvsc@gmail.com",
+      "password": "hcjdbcsybcbbnzbxjw",
+      "id": 23
+    },
+    {
+      "firstname": "ncbnmbmnzbxnc",
+      "lastname": "hdcbbsndcs ",
+      "phone": "830949839084093",
+      "email": "dncdsdbchjds@gmail.com",
+      "password": "bcdsjbsjhdskjdsskcds",
+      "id": 24
     }
   ],
   "wallet": [
@@ -128,6 +200,8 @@
     {
       "accountName": "typicode",
       "accountNumber": "2053667607",
+      "accountBalance": "",
+      "phone": "",
       "bvn": "",
       "profilesId": 1
     }
