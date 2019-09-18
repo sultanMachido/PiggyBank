@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>PiggyBank| Register </title>
+</head>
+<body>
+
+  
+            <nav class="navbar navbar-expand-sm  bg-danger ">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                      </li>
+                    </ul>
+                  
+                  </nav>
+    
+    
+
+    
+
+            <form id="withdraw-form" method="GET">
+                <div class="form-group col-md-6">
+                        <label for="amount">Amount:</label>
+                        <input type="text" class="form-control" id="w-amount">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="account">Account Number To:</label>
+                    <input type="text" class="form-control" id="w-account">
+                </div> 
+                <div class="form-group col-md-6">
+                        <label for="bvn">BVN:</label>
+                        <input type="text" class="form-control" id="w-bvn">
+                </div>     
+                <div class="form-group col-md-6">
+                  <label for="pin">Pin:</label>
+                  <input type="text" class="form-control" id="w-pin">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="pwd">OTP:</label>
+                  <input type="password" class="form-control" id="w-otp">
+                </div>
+
+                <div class="form-group col-md-6">
+                  
+                  <input type="text" class="form-control" id="w-id" value="1" hidden> 
+                </div>
+                
+                <button type="submit" class="btn btn-primary col-sm-3">Submit</button>
+              </form>
+
+
+    
+
+<script src="./js/jquery-3.4.1.js"></script> 
+<script src="./js/piggybank.js"></script>     
+</body>
+</html>
