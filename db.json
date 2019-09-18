@@ -199,12 +199,13 @@
   "wallet": [
     {
       "id": 1,
-      "amount": "8000",
+      "amount": "12000",
       "profilesId": 1,
       "dateTime": "",
       "{amount:1000}": "",
       "amount:8000": "",
-      "{\"amount\":12000}": ""
+      "{\"amount\":12000}": "",
+      "{\"amount\":2000}": ""
     },
     {
       "amount": "0",
@@ -586,6 +587,70 @@
       "transactionType": "withdrawal",
       "profilesId": "1",
       "id": 42
+    },
+    {
+      "amount": "10000",
+      "account": "2053667607",
+      "BVN": "11111111111",
+      "transactionType": "withdrawal",
+      "profilesId": "1",
+      "id": 43
+    },
+    {
+      "amount": "10000",
+      "account": "2053667607",
+      "BVN": "11111111111",
+      "transactionType": "withdrawal",
+      "profilesId": "1",
+      "id": 44
+    },
+    {
+      "amount": "10000",
+      "account": "2053667607",
+      "BVN": "11111111111",
+      "transactionType": "withdrawal",
+      "profilesId": "1",
+      "id": 45
+    },
+    {
+      "amount": "10000",
+      "account": "2053667607",
+      "BVN": "11111111111",
+      "transactionType": "withdrawal",
+      "profilesId": "1",
+      "id": 46
+    },
+    {
+      "amount": "10000",
+      "account": "2053667607",
+      "BVN": "11111111111",
+      "transactionType": "withdrawal",
+      "profilesId": "1",
+      "id": 47
+    },
+    {
+      "amount": "4000",
+      "account": "2053667607",
+      "BVN": "11111111111",
+      "transactionType": "deposit",
+      "profilesId": "1",
+      "id": 48
+    },
+    {
+      "amount": "4000",
+      "account": "2053667607",
+      "BVN": "11111111111",
+      "transactionType": "deposit",
+      "profilesId": "1",
+      "id": 49
+    },
+    {
+      "amount": "4000",
+      "account": "2053667607",
+      "BVN": "11111111111",
+      "transactionType": "deposit",
+      "profilesId": "1",
+      "id": 50
     }
   ]
 }
