@@ -139,7 +139,9 @@
             $('#wallet').load('http://localhost:3000/wallet?_expand=profiles&profilesId='+id,function(responseTxt, statusTxt, xhr){
 
                         if(statusTxt == "success")
-                            return responseTxt.amount;
+                            responseTxt.forEach(element => {
+                                console.log(element);
+                            });
                         if(statusTxt == "error")
                         alert("Error: " + xhr.status + ": " + xhr.statusText);
 
