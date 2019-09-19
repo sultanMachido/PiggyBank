@@ -214,30 +214,6 @@
       "id": 2
     },
     {
-      "amount": "4000",
-      "account": "2053667607",
-      "BVN": "11111111111",
-      "transactionType": "deposit",
-      "profilesId": "1",
-      "id": 3
-    },
-    {
-      "amount": "4000",
-      "account": "2053667607",
-      "BVN": "11111111111",
-      "transactionType": "deposit",
-      "profilesId": "1",
-      "id": 4
-    },
-    {
-      "amount": "4000",
-      "account": "2053667607",
-      "BVN": "11111111111",
-      "transactionType": "deposit",
-      "profilesId": "1",
-      "id": 5
-    },
-    {
       "amount": "8000",
       "id": 6
     }

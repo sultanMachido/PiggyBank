@@ -50,12 +50,14 @@
             <div class='head-bar'>
             <span></span>
             <!-- header -->
+            <h3>Wallet</h3>
             </div>
 
             <div class='body-bar'>
                 <!-- body -->
-                <p>Name:</p>  
-            <p>Email:</p>
+                <div id="wallet">
+                    
+                </div>
             </div> 
         </div>
 </div>
@@ -67,6 +69,7 @@
                 <div class='head-bar'>
                 <span></span>
                 <!-- header -->
+                <h3>Deposit</h3>
                 </div>
     
                 <div class='body-bar'>
@@ -80,6 +83,7 @@
                 <div class='head-bar'>
                 <span></span>
                 <!-- header -->
+                <h3>Withdrawal</h3>
                 </div>
     
                 <div class='body-bar'>
@@ -89,7 +93,7 @@
                 </div> 
             </div>
 
-
+           
 </div>
 
         
@@ -98,6 +102,7 @@
                     <div class='head-bar'>
                     <span></span>
                     <!-- header -->
+                    <h3>Transaction History</h3>
                     </div>
         
                     <div class='body-bar'>
@@ -115,5 +120,32 @@
 
 <script src="./js/jquery-3.4.1.js"></script> 
 <script src="./js/piggybank.js"></script>     
+
+<script>
+        var urlParams = new URLSearchParams(window.location.search);
+        console.log(urlParams.get('val'));
+         var firstname = urlParams.get('val1');
+         var lastname = urlParams.get('val2');
+         var phone = urlParams.get('val3');
+         var email = urlParams.get('val4');
+         var id = urlParams.get('val5');
+        $(document).ready(function(){
+            $('#dashboard-firstname').append(firstname);
+            $('#dashboard-lastname').append(lastname);
+            $('#dashboard-phone').append(phone);
+            $('#dashboard-email').append(email);
+
+
+            $('#wallet').load('http://localhost:3000/wallet?_expand=profiles&profilesId='+id,function(responseTxt, statusTxt, xhr){
+
+                        if(statusTxt == "success")
+                            return responseTxt.amount;
+                        if(statusTxt == "error")
+                        alert("Error: " + xhr.status + ": " + xhr.statusText);
+
+            });
+        })
+     
+     </script>
 </body>
 </html>

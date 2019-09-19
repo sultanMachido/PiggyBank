@@ -140,12 +140,20 @@ $(document).ready(function(){
                 success: function(res){
                     // console.log(res);
                      
-                    
+                    let varAvailable;
                     console.log(res.length);
                    
                     res.forEach(element => {
                        if (element.email === email && element.password === password) {
                        console.log('logged in');
+                       $('#dashboard-firstname').text(element.firstname);
+                       $('#dashboard-lastname').val(element.lastname);
+                       $('#dashboard-phone').val(element.telephone);
+                       var check = $('#dashboard-email').val(element.email);
+                         console.log($('#dashboard-email').val());
+                         varAvailable = true;
+                       window.location.href = "dashboard.html?val1="+element.firstname+"&val2="+
+                       element.lastname+"&val3="+element.telephone+"&val4="+element.email+"&val5="+element.id;
                        } 
 
                        
@@ -557,8 +565,12 @@ $(document).ready(function(){
     event.preventDefault();
 
 })
-
-
+// if (varAvailable) {
+    
+//    var qs = new Querystring();
+//    var v1 = qs.get("val");
+//    console.log(v1);
+// }
     
 
 })
