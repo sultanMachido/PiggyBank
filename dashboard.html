@@ -51,11 +51,14 @@
             <span></span>
             <!-- header -->
             <h3>Wallet</h3>
+                
             </div>
 
             <div class='body-bar'>
                 <!-- body -->
                 <div id="wallet">
+
+                        <p id="amount"></p>
                     
                 </div>
             </div> 
@@ -67,7 +70,7 @@
 
         <div class = 'tab'>
                 <div class='head-bar'>
-                <span></span>
+                <span class='glyphicon glyphicon-user'></span>
                 <!-- header -->
                 <h3>Deposit</h3>
                 </div>
@@ -147,6 +150,7 @@
                 let count = 0;
                 res.forEach(element => {
                    console.log(element);
+                   $('#amount').append(element.amount);
                 });
 
                 
