@@ -82,6 +82,7 @@ $(document).ready(function(){
                                     encode          : true
                                 }).done(function(data){
                                     console.log(data);
+                                    window.location.href = 'login.html';
                                 })
 
                                
