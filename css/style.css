@@ -1,3 +1,35 @@
-#login-form{
-    
+.head-bar{
+    background-color: rgb(0, 183, 255);
+    /* border-radius: 50px 50px 0px 0px;  */
+    text-align: center;
+    color:white;
+   
 }
+
+.body-bar{
+    box-shadow:5px 5px 5px grey;
+    padding: 10px;
+}
+
+
+.tab{
+    width: 50%;
+}
+
+.container-one{
+    margin: 40px auto;
+    display: flex;
+    width: 80%
+
+}
+.container-two{
+    margin: 40px auto;
+    display: flex;
+    width: 80%
+
+}
+.tab-two{
+    width: 100%; 
+}
+
+
