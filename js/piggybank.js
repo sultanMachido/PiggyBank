@@ -457,13 +457,14 @@ $(document).ready(function(){
 
                 //save to transaction table if inputs are valid
                 if (depositStatus && accountStatus && bvnStatus && pinStatus) {
-                     
+                    let transactionTime = new Date().toLocaleString();
                     var accountData = {
                         'amount'      : amount,
                         'account'     : accountNumber,
                         'BVN'         : bvn,
                         'transactionType' : typeOfTransaction,
-                        'profilesId' :  profile
+                        'profilesId' :  profile,
+                        'dateTime'   :transactionTime
                     };
                     console.log(profile);
                 
