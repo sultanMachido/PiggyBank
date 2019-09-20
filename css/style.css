@@ -36,5 +36,11 @@
     font-weight: bold;
     color: black;
 }
+#amount{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: green
+}
 
 
