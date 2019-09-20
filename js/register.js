@@ -14,6 +14,7 @@ $(document).ready(function(){
         var error;
         if (firstname === '' || lastname==='' || phone ==='' || email ==='' || password==='') {
             error = true;
+            
         }
 
         
